@@ -1,0 +1,315 @@
+/*---------------Page Settings-----------------------------*/
+
+* {margin: 0; padding: 0; font-family: 'Open Sans';}
+
+body {overflow-x:hidden;}
+
+/*---------------Sidebar Tab Hover Settings---------------*/
+
+#A:hover {background-color: #ff0000aa;}
+
+#B:hover {background-color: #ff7b00aa;}
+
+#C:hover {background-color: #ffff00aa;}
+
+#D:hover {background-color: #00ff00aa;}
+
+#E:hover {background-color: #00ffffaa;}
+
+#F:hover {background-color: #0000ffaa;}
+
+#G:hover {background-color: #ff00ffaa;}
+
+/*---------------Background Settings------------------------*/
+
+.Background
+{
+  background-size: cover;
+  filter: blur(3px);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+
+.XLBackground
+{
+  background-size: cover;
+  filter: blur(3px);
+  width: 100vw;
+  height: 200vh;
+  position: relative;
+  top: 0;
+  z-index: 1;
+}
+
+/*---------------Main Site Content------------------------*/
+
+.Content
+{
+  /*background-color: #ccff0085;*/
+  position: relative;
+  float: right;
+  width: 80vw;
+  height: 100vh;
+  z-index:2;
+}
+
+.Textbox
+{
+  position: absolute;
+  height: 42vh;
+  width: 50vw;
+  background-color: #1e1e1eea;
+  bottom: 2vh;
+  right: 2vh;
+}
+
+.NamePlate
+{
+  position: absolute;
+  top: 2vh;
+  width: 50vw;
+  display: inline-flex;
+  text-align: right;
+  color: whitesmoke;
+  font-size: 22px;
+}
+
+.Header
+{
+  width: 48vw;
+  padding-right: 2vh;
+}
+
+.Badge
+{
+  padding-right: 2vh;
+  float: right;
+  right: 2vh;
+  width: 15vh;
+  height: 15vh;
+}
+
+
+/*---------------Sidebar Settings--------------------------*/
+
+.Sidebar
+{
+  width: 17vw;
+  height: 100vh;
+  background-color: #1e1e1eea;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.Profile
+{
+  opacity: 1;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  z-index: 4;
+}
+
+.AboutMeProfile
+{
+  opacity: 1;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  padding-right: 0vh;
+  z-index: 4;
+}
+
+.AboutMeTextbox
+{
+  position: absolute;
+  height: 60vh;
+  width: 70vw;
+  background-color: #1e1e1eea;
+  bottom: 2vh;
+  right: 2vh;
+}
+
+.AboutMeTitle
+{
+  padding-top: 23vh;
+  padding-bottom: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Open Sans';
+  font-size: 22px;
+}
+
+.AboutMeNamePlate
+{
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  width: 50vw;
+  display: inline-flex;
+  text-align: right;
+  color: whitesmoke;
+  font-size: 22px;
+}
+
+
+ul li 
+{
+  line-height: 20vh;
+  list-style: none;
+  display: grid;
+}
+
+ul li a 
+{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 17px;
+  font-family: 'Open Sans';
+  text-align: left;
+  
+}
+
+.Menu
+{
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 17px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+}
+
+.Icon
+{
+  padding-right: 2vh;
+  padding-left: 2vh;
+  width: 5vh;
+  height: 5vh;
+}
+
+/*Contact Button Settings*/
+
+.Contact
+{
+  padding-top: 2vh;
+  /*background-color: #0011ff85;*/
+  text-align: center;
+}
+
+.ContactLink
+{
+  background: transparent;
+  /*background-color: #ccff0085;*/
+  margin-left: auto;
+  margin-right: auto; 
+  display: inline-block;
+}
+
+.ContactButton
+{
+  background: transparent;
+  background-size: 3vh 3vh;
+  border: none;
+  width: 3vh;
+  height: 3vh;
+  margin:0.5vw;
+}
+
+/*---------------Text Settings-----------------------------*/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans'), local('OpenSans'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+
+/*Sidebar Title Text*/
+
+.Title
+{
+  padding-bottom: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Open Sans';
+  font-size: 22px;
+}
+
+/*Main Content Text*/
+
+.Paragraph
+{
+  width: 46vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  float: right;
+  padding-right: 2vh;
+  padding-bottom: 2vh;
+  color: whitesmoke;
+  font-family: 'Open Sans';
+  font-size: 1vw;
+  text-align: right;
+}
+
+/*---------------Other-----------------------------*/
+
+.SkillsSection
+{
+  position: absolute;
+  height: 196vh;
+  width: 70vw;
+  top: 2vh;
+  right: 6vw;
+  background-color: #1e1e1eea;
+  z-index: 2;
+}
+
+.SkillSet
+{
+  position: relative;
+  height: 45vh;
+  width: 66vw;
+  top: 2vw;
+  left: 2vw;
+  background-color: #1e1e1eea;
+  text-align: center;
+}
+
+.SkillSetTitle
+{
+  position: relative;
+  text-align: center;
+  padding-top: 5vh;
+  padding-left: 2vh;
+  color: whitesmoke;
+  font-size: 25px;
+  font-family: 'Open Sans';
+}
+
+/*background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+border-radius: 25px;*/
