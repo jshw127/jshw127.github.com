@@ -85,7 +85,7 @@ body {overflow-x:hidden;}
 
 .Badge
 {
-  /*padding-right: 2vh;*/
+  padding-right: 10vh;
   float: right;
   right: 2vh;
   width: 15vh;
