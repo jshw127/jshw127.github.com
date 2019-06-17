@@ -212,23 +212,28 @@ ul li a
   text-align: center;
 }
 
-.ContactLink
+.ContactButton
 {
-  background: transparent;
-  /*background-color: #ccff0085;*/
   margin-left: auto;
   margin-right: auto; 
   display: inline-block;
-}
-
-.ContactButton
-{
   background: transparent;
+  /*background-color: #ccff0085;*/
   background-size: 3vh 3vh;
   border: none;
   width: 3vh;
   height: 3vh;
   margin:0.5vw;
+}
+
+.ContactInfo
+{
+  width: 20vw;
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Open Sans';
+  font-size: 1vw;
+  padding-bottom: 2vh;
 }
 
 /*---------------Text Settings-----------------------------*/
@@ -313,3 +318,37 @@ radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
 background-color:#282828;
 background-size:16px 16px;
 border-radius: 25px;*/
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 10vh;
+  left: 18vw;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 25vw;
+  padding: 10px;
+  background-color: #000000dd;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #ff0000;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

@@ -27,16 +27,32 @@
 
             
             <div class='Contact'>
-                <form class="ContactLink" action="https://github.com/jshw127">
-                    <button style="background-image: url(/Images/GitHub.png)" type="submit" class="ContactButton"></button>
-                </form>
-                <form class="ContactLink" action="https://www.linkedin.com/in/jshw127">
-                    <button style="background-image: url(/Images/Linkedin.png)" type="submit" class="ContactButton"></button>
-                </form>
-                <form class="ContactLink" action="https://github.com/jshw127">
-                    <button style="background-image: url(/Images/Email.png)" type="submit" class="ContactButton"></button>
+                    <button style="background-image: url(/Images/GitHub.png)" type="submit" action="https://github.com/jshw127" class="ContactButton"></button>
+                    <button style="background-image: url(/Images/Linkedin.png)" type="submit" action="https://www.linkedin.com/in/jshw127" class="ContactButton"></button>
+                    <button style="background-image: url(/Images/Email.png)" type="submit" onclick="openForm()" class="ContactButton"></button>
+            </div>
+    
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                    <p class='Title'>Contact Information</p>
+                    <p class='ContactInfo'>Cell Phone #: (925)-519-4374</p>
+                    <p class='ContactInfo'>Email: jshw127@gmail.com</p>
+                    <button type="button" class="btn" onclick="closeForm()">Close</button>
                 </form>
             </div>
+    
+            <script>
+                    function openForm() 
+                    {
+                        document.getElementById("myForm").style.display = "block";
+                    }
+                    
+                    function closeForm() 
+                    {
+                        document.getElementById("myForm").style.display = "none";
+                    }
+            </script>
+
 
         </div>
 
