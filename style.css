@@ -38,7 +38,7 @@ body {overflow-x:hidden;}
   background-size: cover;
   filter: blur(3px);
   width: 100vw;
-  height: 200vh;
+  height: 150vh;
   position: relative;
   top: 0;
   z-index: 1;
@@ -280,7 +280,7 @@ ul li a
 .SkillsSection
 {
   position: absolute;
-  height: 196vh;
+  height: 146vh;
   width: 70vw;
   top: 2vh;
   right: 6vw;
@@ -291,7 +291,7 @@ ul li a
 .SkillSet
 {
   position: relative;
-  height: 50vh;
+  height: 40vh;
   width: 66vw;
   top: 2vw;
   left: 2vw;
@@ -312,7 +312,7 @@ ul li a
 
 .Skills
 {
-  padding-top: 10vh;
+  padding-top: 7vh;
   display: flex;
   /*background: #d9ff00aa;*/
   position: absolute;
