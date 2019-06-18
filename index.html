@@ -11,24 +11,23 @@
     <body>
 
         <div class="Sidebar">
-            <img class="Profile" src="/Images/Optimized.png" border-radius="50%">
+            <img class="Profile" src="/Images/Optimized.jpg" border-radius="50%">
             <p class='Title'>Joshua Williams<br>Software Engineer</p>
             <nav>
                 <ul>
-                    <li><button class="Menu" id="A"><img class="Icon" src="Images/Person.png"/><a href="about.html">About Me</a></button></li>
-                    <li><button class="Menu" id="B"><img class="Icon" src="Images/Experience.png"/><a href="#Experience">Experience</a></button></li>
-                    <li><button class="Menu" id="C"><img class="Icon" src="Images/School.png"/><a href="#Education">Education</a></button></li>
-                    <li><button class="Menu" id="D"><img class="Icon" src="Images/Projects.png"/><a href="#Projects">Projects</a></button></li>
-                    <li><button class="Menu" id="E"><img class="Icon" src="Images/Skills.png"/><a href="#Skills">Skills</a></button></li>
-                    <li><button class="Menu" id="F"><img class="Icon" src="Images/Medal.png"/><a href="#Certifications">Certifications</a></button></li>
-                    <!--<li><button class="Menu" id="G"><img class="Icon" src="Images/Email.png"/>Contact</button></li>-->
+                    <a href="about.html"><li><button class="Menu" id="A"><img class="Icon" src="Images/Person.png"/>About Me</button></li></a>
+                    <a href="#Experience"><li><button class="Menu" id="B"><img class="Icon" src="Images/Experience.png"/>Experience</button></li></a>
+                    <a href="#Education"><li><button class="Menu" id="C"><img class="Icon" src="Images/School.png"/>Education</button></li></a>
+                    <a href="#Projects"><li><button class="Menu" id="D"><img class="Icon" src="Images/Projects.png"/>Projects</button></li></a>
+                    <a href="#Skills"><li><button class="Menu" id="E"><img class="Icon" src="Images/Skills.png"/>Skills</button></li></a>
+                    <a href="#Certifications"><li><button class="Menu" id="F"><img class="Icon" src="Images/Medal.png"/>Certifications</button></li></a>
                 </ul>
             </nav>
 
             
             <div class='Contact'>
-                <button style="background-image: url(/Images/GitHub.png)" type="submit" action="https://github.com/jshw127" class="ContactButton"></button>
-                <button style="background-image: url(/Images/Linkedin.png)" type="submit" action="https://www.linkedin.com/in/jshw127" class="ContactButton"></button>
+                <form class="ContactForm" action="https://github.com/jshw127"><button style="background-image: url(/Images/GitHub.png)" type="submit" class="ContactButton"/></form>
+                <form class="ContactForm" action="https://www.linkedin.com/in/jshw127"><button style="background-image: url(/Images/Linkedin.png)" type="submit" class="ContactButton"/></form>
                 <button style="background-image: url(/Images/Email.png)" type="submit" onclick="openForm()" class="ContactButton"></button>
             </div>
 
