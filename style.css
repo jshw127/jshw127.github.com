@@ -1,4 +1,4 @@
-/*---------------Page Settings-----------------------------*/
+/*Page Settings/////////////////////////////////////////////////////////////////////////////////////////////*/
 
 * {margin: 0; padding: 0; font-family: 'Open Sans';}
 
@@ -6,12 +6,9 @@ html {scroll-behavior: smooth;}
 
 body {overflow-x:hidden;}
 
-a, a:hover, a:active, a:visited, a:focus
-{
-  text-decoration: none;
-}
+a, a:hover, a:active, a:visited, a:focus {text-decoration: none;}
 
-/*---------------Sidebar Tab Hover Settings---------------*/
+/*Sidebar Tab Hover Settings////////////////////////////////////////////////////////////////////////////////*/
 
 #A:hover {background-color: #062f4faa;}
 
@@ -25,7 +22,7 @@ a, a:hover, a:active, a:visited, a:focus
 
 #F:hover {background-color: #b82601aa;}
 
-/*---------------Background Settings------------------------*/
+/*Background Settings///////////////////////////////////////////////////////////////////////////////////////*/
 
 .Background
 {
@@ -38,7 +35,7 @@ a, a:hover, a:active, a:visited, a:focus
   z-index: 1;
 }
 
-.XLBackground
+#XL
 {
   background-size: cover;
   filter: blur(3px);
@@ -49,7 +46,111 @@ a, a:hover, a:active, a:visited, a:focus
   z-index: 1;
 }
 
-/*---------------Main Site Content------------------------*/
+/*Sidebar Settings//////////////////////////////////////////////////////////////////////////////////////////*/
+
+.Sidebar
+{
+  transition: ease all .5s;
+  width: 17vw;
+  height: 100vh;
+  background-color: #1e1e1eea;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.Profile
+{
+  opacity: 1;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  z-index: 4;
+}
+
+.Menu
+{
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1vw;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+}
+
+.Icon
+{
+  padding-right: 2vh;
+  padding-left: 2vh;
+  width: 5vh;
+  height: 5vh;
+}
+
+ul li 
+{
+  line-height: 20vh;
+  list-style: none;
+  display: grid;
+}
+
+ul li a 
+{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 2vw;
+  font-family: 'Open Sans';
+  text-align: left;
+  
+}
+
+/*Contact Button Settings///////////////////////////////////////////////////////////////////////////////////*/
+
+.Contact
+{
+  padding-top: 2vh;
+  /*background-color: #0011ff85;*/
+  text-align: center;
+}
+
+.ContactForm
+{
+  display: inline;
+}
+
+.ContactButton
+{
+  margin-left: auto;
+  margin-right: auto; 
+  display: inline-block;
+  background: transparent;
+  /*background-color: #ccff0085;*/
+  background-size: 3vh 3vh;
+  border: none;
+  width: 3vh;
+  height: 3vh;
+  margin:0.5vw;
+}
+
+.ContactInfo
+{
+  width: 20vw;
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Open Sans';
+  font-size: 1vw;
+  padding-bottom: 2vh;
+}
+
+/*Main Site Content/////////////////////////////////////////////////////////////////////////////////////////*/
 
 .Content
 {
@@ -97,36 +198,9 @@ a, a:hover, a:active, a:visited, a:focus
   height: 15vh;
 }
 
+/*About Me Site Content/////////////////////////////////////////////////////////////////////////////////////*/
 
-/*---------------Sidebar Settings--------------------------*/
-
-.Sidebar
-{
-  transition: ease all .5s;
-  width: 17vw;
-  height: 100vh;
-  background-color: #1e1e1eea;
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: 0;
-}
-
-.Profile
-{
-  opacity: 1;
-  width: 7vw;
-  height: 7vw;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  z-index: 4;
-}
-
-.AboutMeProfile
+#AM_Profile
 {
   opacity: 1;
   width: 10vw;
@@ -136,7 +210,7 @@ a, a:hover, a:active, a:visited, a:focus
   z-index: 4;
 }
 
-.AboutMeTextbox
+#AM_Textbox
 {
   position: absolute;
   height: 60vh;
@@ -146,7 +220,7 @@ a, a:hover, a:active, a:visited, a:focus
   right: 2vh;
 }
 
-.AboutMeTitle
+#AM_Title
 {
   padding-top: 23vh;
   padding-bottom: 2vh;
@@ -158,7 +232,7 @@ a, a:hover, a:active, a:visited, a:focus
   font-size: 22px;
 }
 
-.AboutMeNamePlate
+#AM_Nameplate
 {
   position: absolute;
   top: 2vh;
@@ -170,123 +244,7 @@ a, a:hover, a:active, a:visited, a:focus
   font-size: 22px;
 }
 
-
-ul li 
-{
-  line-height: 20vh;
-  list-style: none;
-  display: grid;
-}
-
-ul li a 
-{
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 2vw;
-  font-family: 'Open Sans';
-  text-align: left;
-  
-}
-
-.Menu
-{
-  background: transparent;
-  border: none;
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 1vw;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  height: 8vh;
-}
-
-.Icon
-{
-  padding-right: 2vh;
-  padding-left: 2vh;
-  width: 5vh;
-  height: 5vh;
-}
-
-/*Contact Button Settings*/
-
-.Contact
-{
-  padding-top: 2vh;
-  /*background-color: #0011ff85;*/
-  text-align: center;
-}
-
-.ContactForm
-{
-  display: inline;
-}
-
-.ContactButton
-{
-  margin-left: auto;
-  margin-right: auto; 
-  display: inline-block;
-  background: transparent;
-  /*background-color: #ccff0085;*/
-  background-size: 3vh 3vh;
-  border: none;
-  width: 3vh;
-  height: 3vh;
-  margin:0.5vw;
-}
-
-.ContactInfo
-{
-  width: 20vw;
-  text-align: center;
-  color: whitesmoke;
-  font-family: 'Open Sans';
-  font-size: 1vw;
-  padding-bottom: 2vh;
-}
-
-/*---------------Text Settings-----------------------------*/
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans'), local('OpenSans'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
-}
-
-/*Sidebar Title Text*/
-
-.Title
-{
-  padding-bottom: 2vh;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  color: whitesmoke;
-  font-family: 'Open Sans';
-  font-size: 22px;
-}
-
-/*Main Content Text*/
-
-.Paragraph
-{
-  width: 46vw;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  float: right;
-  padding-right: 2vh;
-  padding-bottom: 2vh;
-  color: whitesmoke;
-  font-family: 'Open Sans';
-  font-size: 1vw;
-  text-align: right;
-}
-
-/*---------------Other-----------------------------*/
+/*Skill Section Content/////////////////////////////////////////////////////////////////////////////////////*/
 
 .SkillsSection
 {
@@ -359,16 +317,87 @@ ul li a
   bottom: 2vh;
 }
 
+/*Text Settings/////////////////////////////////////////////////////////////////////////////////////////////*/
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans'), local('OpenSans'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+
+.Title
+{
+  padding-bottom: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Open Sans';
+  font-size: 22px;
+}
+
+.Paragraph
+{
+  width: 46vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  float: right;
+  padding-right: 2vh;
+  padding-bottom: 2vh;
+  color: whitesmoke;
+  font-family: 'Open Sans';
+  font-size: 1vw;
+  text-align: right;
+}
+
+/*Normal Media Settings/////////////////////////////////////////////////////////////////////////////////////*/
+
 .MenuButton
 {
   display: none;
 }
+
+.Tag
+{
+  display: flex;
+}
+
+#P2
+{
+  display: none;
+}
+#T2
+{
+  display: none;
+}
+
+/*Modified Media Settings///////////////////////////////////////////////////////////////////////////////////*/
 
 @media only screen and (max-width: 1200px)
 {
   .Textbox
   {
     height: 35vh;
+  }
+  .TagContainer
+  {
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 5;
+  }
+  .Tag
+  {
+  transition: ease all .5s;
+  width: 30vw;
+  height: 30vh;
+  background-color: #1e1e1eea;
+  position: absolute;
+  z-index: 6;
+  bottom: 2vh;
+  left: 2vh;
   }
   .MenuButton
   {
@@ -388,11 +417,23 @@ ul li a
     height: 7vh;
     transition: ease all .5s;
   }
-  .Profile
+  #P1
   {
     display: none;
   }
-  .Title
+  #T1
+  {
+    display: none;
+  }
+  #P2
+  {
+    display: block;
+  }
+  #T2
+  {
+    display: block;
+  }
+  #AM_Title
   {
     display: none;
   }

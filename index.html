@@ -12,8 +12,8 @@
 
         <div class="Sidebar">
             <button style="background-image: url(/Images/Menu.png)" type="submit" class="MenuButton"></button>
-            <img class="Profile" src="/Images/Optimized.jpg" border-radius="50%">
-            <p class='Title'>Joshua Williams<br>Software Engineer</p>
+            <img id="P1" class="Profile" src="/Images/Optimized.jpg" border-radius="50%">
+            <p id="T1" class='Title'>Joshua Williams<br>Software Engineer</p>
             <nav>
                 <ul>
                     <a href="about.html"><li><button class="Menu" id="A"><img class="Icon" src="Images/Person.png"/>About Me</button></li></a>
@@ -32,6 +32,18 @@
                 <form class="ContactForm" action="mailto:contact@joshuawilliams.info"><button style="background-image: url(/Images/Email.png)" type="submit" class="ContactButton"/></form>
             </div>
 
+        </div>
+
+        <div class="TagContainer">
+            <div class="Tag">
+                <img id="P2" class="Profile" src="/Images/Optimized.jpg" border-radius="50%">
+                <p id="T2" class='Title'>Joshua Williams<br>Software Engineer</p>
+                <div class='Contact'>
+                    <form class="ContactForm" action="https://github.com/jshw127"><button style="background-image: url(/Images/GitHub.png)" type="submit" class="ContactButton"/></form>
+                    <form class="ContactForm" action="https://www.linkedin.com/in/jshw127"><button style="background-image: url(/Images/Linkedin.png)" type="submit" class="ContactButton"/></form>
+                    <form class="ContactForm" action="mailto:contact@joshuawilliams.info"><button style="background-image: url(/Images/Email.png)" type="submit" class="ContactButton"/></form>
+                </div>
+            </div>
         </div>
 
         <div>
@@ -125,11 +137,11 @@
                     
                     <p class="Paragraph">
                         For this simulation, I created an environment on VirtualBox consisting of three hosts connected to the same
-                         local area network. In this configuration, one computer was configured as a DNS server running BIND9. With 
-                         this configuration complete, I then wrote a program to simulate the Kaminsky DNS attack. This attack consists 
-                         of an attacker computer flooding the DNS server with DNS requests that have forged DNS responses in the packet’s 
-                         options. If the transaction ID of the spoofed packet is correct, the DNS server caches the IP address in the 
-                         falsified response.
+                        local area network. In this configuration, one computer was configured as a DNS server running BIND9. With 
+                        this configuration complete, I then wrote a program to simulate the Kaminsky DNS attack. This attack consists 
+                        of an attacker computer flooding the DNS server with DNS requests that have forged DNS responses in the packet’s 
+                        options. If the transaction ID of the spoofed packet is correct, the DNS server caches the IP address in the 
+                        falsified response.
                     </p>
                 </div>
             </div>
@@ -240,7 +252,7 @@
                     </div>
                 </div>
             </div>
-            <div class="XLBackground" id="Skills" style="background-image: url(Images/CB.jpg)"></div>
+            <div id="XL" class="Background" id="Skills" style="background-image: url(Images/CB.jpg)"></div>
         </div>
 
         <div>
