@@ -25,8 +25,6 @@ a, a:hover, a:active, a:visited, a:focus
 
 #F:hover {background-color: #b82601aa;}
 
-#G:hover {background-color: #049FD9aa;}
-
 /*---------------Background Settings------------------------*/
 
 .Background
@@ -66,7 +64,7 @@ a, a:hover, a:active, a:visited, a:focus
 .Textbox
 {
   position: absolute;
-  height: 42vh;
+  height: 40vh;
   width: 50vw;
   background-color: #1e1e1eea;
   bottom: 2vh;
@@ -104,6 +102,7 @@ a, a:hover, a:active, a:visited, a:focus
 
 .Sidebar
 {
+  transition: ease all .5s;
   width: 17vw;
   height: 100vh;
   background-color: #1e1e1eea;
@@ -183,7 +182,7 @@ ul li a
 {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 17px;
+  font-size: 2vw;
   font-family: 'Open Sans';
   text-align: left;
   
@@ -195,7 +194,7 @@ ul li a
   border: none;
   text-decoration: none;
   color: whitesmoke;
-  font-size: 17px;
+  font-size: 1vw;
   text-align: left;
   display: flex;
   align-items: center;
@@ -360,45 +359,49 @@ ul li a
   bottom: 2vh;
 }
 
-/*background:
-radial-gradient(black 15%, transparent 16%) 0 0,
-radial-gradient(black 15%, transparent 16%) 8px 8px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-background-color:#282828;
-background-size:16px 16px;
-border-radius: 25px;*/
-
-
-/* The popup form - hidden by default */
-.form-popup {
+.MenuButton
+{
   display: none;
-  position: fixed;
-  bottom: 10vh;
-  left: 18vw;
-  z-index: 9;
 }
 
-/* Add styles to the form container */
-.form-container {
-  max-width: 25vw;
-  padding: 10px;
-  background-color: #000000dd;
-}
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #ff0000;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+@media only screen and (max-width: 1200px)
+{
+  .Textbox
+  {
+    height: 35vh;
+  }
+  .MenuButton
+  {
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    display: flex;
+    background-size: 7vh 7vh;
+    width: 7vh;
+    height: 7vh;
+  }
+  .Sidebar
+  {
+    top: 1vh;
+    left: 1vh;
+    width: 7vh;
+    height: 7vh;
+    transition: ease all .5s;
+  }
+  .Profile
+  {
+    display: none;
+  }
+  .Title
+  {
+    display: none;
+  }
+  .Contact
+  {
+    display: none;
+  }
+  nav
+  {
+    display: none;
+  }
 }
