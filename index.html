@@ -9,9 +9,28 @@
         <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
     </head>
     <body>
+        
+        <script type="text/javascript">
+
+            function on()
+            {
+                document.getElementById("M1").style.display = 'none';
+                document.getElementById("M2").style.display = 'flex';
+                document.getElementsByTagName('nav')[0].style.display = 'block';
+            }
+
+            function off()
+            {
+                document.getElementById("M1").style.display = 'flex';
+                document.getElementById("M2").style.display = 'none';
+                document.getElementsByTagName('nav')[0].style.display = 'none';
+            }
+
+        </script>
 
         <div class="Sidebar">
-            <button style="background-image: url(/Images/Menu.png)" type="submit" class="MenuButton"></button>
+            <button type="button" onclick="on()" id="M1" class="MenuButton"></button>
+            <button type="button" onclick="off()" id="M2" class="MenuButton"></button>
             <img id="P1" class="Profile" src="/Images/Optimized.jpg" border-radius="50%">
             <p id="T1" class='Title'>Joshua Williams<br>Software Engineer</p>
             <nav>
@@ -47,6 +66,7 @@
                 </div>
             </div>
         </div>
+
 
         <div>
             <div class="Content">
@@ -254,7 +274,7 @@
                     </div>
                 </div>
             </div>
-            <div id="XL" class="Background" id="Skills" style="background-image: url(Images/CB.jpg)"></div>
+            <div class="XL" id="Skills" style="background-image: url(Images/CB.jpg)"></div>
         </div>
 
         <div>

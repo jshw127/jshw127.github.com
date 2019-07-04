@@ -11,8 +11,27 @@
     </head>
     <body>
 
+        <script type="text/javascript">
+
+            function on()
+            {
+                document.getElementById("M1").style.display = 'none';
+                document.getElementById("M2").style.display = 'flex';
+                document.getElementsByTagName('nav')[0].style.display = 'block';
+            }
+
+            function off()
+            {
+                document.getElementById("M1").style.display = 'flex';
+                document.getElementById("M2").style.display = 'none';
+                document.getElementsByTagName('nav')[0].style.display = 'none';
+            }
+
+        </script>
+
         <div class="Sidebar">
-            <button style="background-image: url(/Images/Menu.png)" type="submit" class="MenuButton"></button>
+            <button type="button" onclick="on()" id="M1" class="MenuButton"></button>
+            <button type="button" onclick="off()" id="M2" class="MenuButton"></button>
             <p id="AM_Title">Menu</p>
             <nav>
                 <ul>
@@ -26,7 +45,7 @@
             </nav>
 
             
-            <div class='Contact'>
+            <div id="C1" class='Contact'>
                 <form class="ContactForm" action="https://github.com/jshw127"><button style="background-image: url(/Images/GitHub.png)" type="submit" class="ContactButton"/></form>
                 <form class="ContactForm" action="https://www.linkedin.com/in/jshw127"><button style="background-image: url(/Images/Linkedin.png)" type="submit" class="ContactButton"/></form>
                 <form class="ContactForm" action="mailto:contact@joshuawilliams.info"><button style="background-image: url(/Images/Email.png)" type="submit" class="ContactButton"/></form>

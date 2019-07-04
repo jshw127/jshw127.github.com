@@ -35,7 +35,7 @@ a, a:hover, a:active, a:visited, a:focus {text-decoration: none;}
   z-index: 1;
 }
 
-#XL
+.XL
 {
   background-size: cover;
   filter: blur(3px);
@@ -365,6 +365,19 @@ ul li a
 {
   display: none;
 }
+#M1
+{
+  display: none;
+}
+#M2
+{
+  display: none;
+}
+
+nav
+{
+  display: block;
+}
 
 /*Modified Media Settings///////////////////////////////////////////////////////////////////////////////////*/
 
@@ -379,17 +392,17 @@ ul li a
     width: 50vw;
     height: 100vh;
     position: fixed;
-    z-index: 5;
+    z-index: 2;
   }
   .Tag
   {
     transition: ease all .5s;
     width: 25vw;
-    height: 27vh;
+    height: 20vh;
     background-color: #1e1e1eea;
     position: absolute;
     display: inline-block;
-    z-index: 6;
+    z-index: 3;
     bottom: 2vh;
     left: 2vh;
   }
@@ -407,15 +420,16 @@ ul li a
     background-size: 7vh 7vh;
     width: 7vh;
     height: 7vh;
+    z-index: 4;
   }
   .Sidebar
   {
+    background-color: #1e1e1eea;
     top: 1vh;
     left: 1vh;
     width: 7vh;
     height: 7vh;
     transition: ease all .5s;
-    border-radius: 50%;
   }
   .SkillsSection
   {
@@ -436,7 +450,7 @@ ul li a
   #P2
   {
     display: inline;
-    padding: 2vh;
+    padding: 1vh;
   }
   #T2
   {
@@ -452,8 +466,19 @@ ul li a
   {
     display: none;
   }
-  nav
+  #M1
   {
+    background-image: url(/Images/Menu.png);
+  }
+  #M2
+  {
+    display: none;
+    background-image: url(/Images/X.png);
+  }
+  nav 
+  {
+    background-color: #1e1e1eea;
+    width: 17vw;
     display: none;
   }
 }
