@@ -11,8 +11,28 @@
     </head>
     <body>
 
+        <script type="text/javascript">
+
+            function on()
+            {
+                document.getElementById("M1").style.display = 'none';
+                document.getElementById("M2").style.display = 'flex';
+                document.getElementsByTagName('nav')[0].style.display = 'block';
+            }
+
+            function off()
+            {
+                document.getElementById("M1").style.display = 'flex';
+                document.getElementById("M2").style.display = 'none';
+                document.getElementsByTagName('nav')[0].style.display = 'none';
+            }
+
+        </script>
+
         <div class="Sidebar">
-            <p class='AboutMeTitle'>Menu</p>
+            <button type="button" onclick="on()" id="M1" class="MenuButton"></button>
+            <button type="button" onclick="off()" id="M2" class="MenuButton"></button>
+            <p id="AM_Title">Menu</p>
             <nav>
                 <ul>
                     <a href="about.html"><li><button class="Menu" id="A"><img class="Icon" src="Images/Person.png"/>About Me</button></li></a>
@@ -25,50 +45,25 @@
             </nav>
 
             
-            <div class='Contact'>
+            <div id="C1" class='Contact'>
                 <form class="ContactForm" action="https://github.com/jshw127"><button style="background-image: url(/Images/GitHub.png)" type="submit" class="ContactButton"/></form>
                 <form class="ContactForm" action="https://www.linkedin.com/in/jshw127"><button style="background-image: url(/Images/Linkedin.png)" type="submit" class="ContactButton"/></form>
-                <!--<button style="background-image: url(/Images/Email.png)" type="submit" onclick="openForm()" class="ContactButton"></button>-->
                 <form class="ContactForm" action="mailto:contact@joshuawilliams.info"><button style="background-image: url(/Images/Email.png)" type="submit" class="ContactButton"/></form>
             </div>
-
-            <!--
-            <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
-                    <p class='Title'>Contact Information</p>
-                    <p class='ContactInfo'>Cell Phone #: (925)-519-4374</p>
-                    <p class='ContactInfo'>Email: contact@joshuawilliams.info</p>
-                    <button type="button" class="btn" onclick="closeForm()">Close</button>
-                </form>
-            </div>
-
-            <script>
-                    function openForm() 
-                    {
-                        document.getElementById("myForm").style.display = "block";
-                    }
-                    
-                    function closeForm() 
-                    {
-                        document.getElementById("myForm").style.display = "none";
-                    }
-            </script>
-            -->
-
 
         </div>
 
         <div>
             <div class="Content">
-                <div class="AboutMeTextbox">
-                    <div class="AboutMeNamePlate">
+                <div id="AM_Textbox">
+                    <div id="AM_Nameplate">
                         <div class="Header">
                         <span>
                             Joshua Williams<br>
                             Software Developer | Electrical Engineer
                         </span>
                         </div>
-                        <img class="AboutMeProfile" src="/Images/Optimized.png">
+                        <img id="AM_Profile" src="/Images/Optimized.png">
                     </div>
                     
                     

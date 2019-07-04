@@ -1,4 +1,4 @@
-/*---------------Page Settings-----------------------------*/
+/*Page Settings/////////////////////////////////////////////////////////////////////////////////////////////*/
 
 * {margin: 0; padding: 0; font-family: 'Open Sans';}
 
@@ -6,12 +6,9 @@ html {scroll-behavior: smooth;}
 
 body {overflow-x:hidden;}
 
-a, a:hover, a:active, a:visited, a:focus
-{
-  text-decoration: none;
-}
+a, a:hover, a:active, a:visited, a:focus {text-decoration: none;}
 
-/*---------------Sidebar Tab Hover Settings---------------*/
+/*Sidebar Tab Hover Settings////////////////////////////////////////////////////////////////////////////////*/
 
 #A:hover {background-color: #062f4faa;}
 
@@ -25,9 +22,7 @@ a, a:hover, a:active, a:visited, a:focus
 
 #F:hover {background-color: #b82601aa;}
 
-#G:hover {background-color: #049FD9aa;}
-
-/*---------------Background Settings------------------------*/
+/*Background Settings///////////////////////////////////////////////////////////////////////////////////////*/
 
 .Background
 {
@@ -40,7 +35,7 @@ a, a:hover, a:active, a:visited, a:focus
   z-index: 1;
 }
 
-.XLBackground
+.XL
 {
   background-size: cover;
   filter: blur(3px);
@@ -51,11 +46,104 @@ a, a:hover, a:active, a:visited, a:focus
   z-index: 1;
 }
 
-/*---------------Main Site Content------------------------*/
+/*Sidebar Settings//////////////////////////////////////////////////////////////////////////////////////////*/
+
+.Sidebar
+{
+  transition: ease all .5s;
+  width: 17vw;
+  height: 100vh;
+  background-color: #1e1e1eea;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.Profile
+{
+  opacity: 1;
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  z-index: 4;
+}
+
+.Menu
+{
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1vw;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  height: 8vh;
+}
+
+.Icon
+{
+  padding-right: 2vh;
+  padding-left: 2vh;
+  width: 5vh;
+  height: 5vh;
+}
+
+ul li 
+{
+  line-height: 20vh;
+  list-style: none;
+  display: grid;
+}
+
+ul li a 
+{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 2vw;
+  font-family: 'Open Sans';
+  text-align: left;
+  
+}
+
+/*Contact Button Settings///////////////////////////////////////////////////////////////////////////////////*/
+
+.Contact
+{
+  padding-top: 2vh;
+  /*background-color: #0011ff85;*/
+  text-align: center;
+}
+
+.ContactForm
+{
+  display: inline;
+}
+
+.ContactButton
+{
+  margin-left: auto;
+  margin-right: auto; 
+  display: inline-block;
+  background: transparent;
+  /*background-color: #ccff0085;*/
+  background-size: 3vh 3vh;
+  border: none;
+  width: 3vh;
+  height: 3vh;
+  margin:0.5vw;
+}
+
+/*Main Site Content/////////////////////////////////////////////////////////////////////////////////////////*/
 
 .Content
 {
-  /*background-color: #ccff0085;*/
   position: relative;
   float: right;
   width: 80vw;
@@ -66,7 +154,7 @@ a, a:hover, a:active, a:visited, a:focus
 .Textbox
 {
   position: absolute;
-  height: 42vh;
+  height: 40vh;
   width: 50vw;
   background-color: #1e1e1eea;
   bottom: 2vh;
@@ -99,35 +187,9 @@ a, a:hover, a:active, a:visited, a:focus
   height: 15vh;
 }
 
+/*About Me Site Content/////////////////////////////////////////////////////////////////////////////////////*/
 
-/*---------------Sidebar Settings--------------------------*/
-
-.Sidebar
-{
-  width: 17vw;
-  height: 100vh;
-  background-color: #1e1e1eea;
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  left: 0;
-}
-
-.Profile
-{
-  opacity: 1;
-  width: 7vw;
-  height: 7vw;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  z-index: 4;
-}
-
-.AboutMeProfile
+#AM_Profile
 {
   opacity: 1;
   width: 10vw;
@@ -137,7 +199,7 @@ a, a:hover, a:active, a:visited, a:focus
   z-index: 4;
 }
 
-.AboutMeTextbox
+#AM_Textbox
 {
   position: absolute;
   height: 60vh;
@@ -147,7 +209,7 @@ a, a:hover, a:active, a:visited, a:focus
   right: 2vh;
 }
 
-.AboutMeTitle
+#AM_Title
 {
   padding-top: 23vh;
   padding-bottom: 2vh;
@@ -159,7 +221,7 @@ a, a:hover, a:active, a:visited, a:focus
   font-size: 22px;
 }
 
-.AboutMeNamePlate
+#AM_Nameplate
 {
   position: absolute;
   top: 2vh;
@@ -171,123 +233,7 @@ a, a:hover, a:active, a:visited, a:focus
   font-size: 22px;
 }
 
-
-ul li 
-{
-  line-height: 20vh;
-  list-style: none;
-  display: grid;
-}
-
-ul li a 
-{
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 17px;
-  font-family: 'Open Sans';
-  text-align: left;
-  
-}
-
-.Menu
-{
-  background: transparent;
-  border: none;
-  text-decoration: none;
-  color: whitesmoke;
-  font-size: 17px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  height: 8vh;
-}
-
-.Icon
-{
-  padding-right: 2vh;
-  padding-left: 2vh;
-  width: 5vh;
-  height: 5vh;
-}
-
-/*Contact Button Settings*/
-
-.Contact
-{
-  padding-top: 2vh;
-  /*background-color: #0011ff85;*/
-  text-align: center;
-}
-
-.ContactForm
-{
-  display: inline;
-}
-
-.ContactButton
-{
-  margin-left: auto;
-  margin-right: auto; 
-  display: inline-block;
-  background: transparent;
-  /*background-color: #ccff0085;*/
-  background-size: 3vh 3vh;
-  border: none;
-  width: 3vh;
-  height: 3vh;
-  margin:0.5vw;
-}
-
-.ContactInfo
-{
-  width: 20vw;
-  text-align: center;
-  color: whitesmoke;
-  font-family: 'Open Sans';
-  font-size: 1vw;
-  padding-bottom: 2vh;
-}
-
-/*---------------Text Settings-----------------------------*/
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans'), local('OpenSans'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
-}
-
-/*Sidebar Title Text*/
-
-.Title
-{
-  padding-bottom: 2vh;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  color: whitesmoke;
-  font-family: 'Open Sans';
-  font-size: 22px;
-}
-
-/*Main Content Text*/
-
-.Paragraph
-{
-  width: 46vw;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  float: right;
-  padding-right: 2vh;
-  padding-bottom: 2vh;
-  color: whitesmoke;
-  font-family: 'Open Sans';
-  font-size: 1vw;
-  text-align: right;
-}
-
-/*---------------Other-----------------------------*/
+/*Skill Section Content/////////////////////////////////////////////////////////////////////////////////////*/
 
 .SkillsSection
 {
@@ -360,45 +306,179 @@ ul li a
   bottom: 2vh;
 }
 
-/*background:
-radial-gradient(black 15%, transparent 16%) 0 0,
-radial-gradient(black 15%, transparent 16%) 8px 8px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-background-color:#282828;
-background-size:16px 16px;
-border-radius: 25px;*/
+/*Text Settings/////////////////////////////////////////////////////////////////////////////////////////////*/
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans'), local('OpenSans'), url('https://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
 
-/* The popup form - hidden by default */
-.form-popup {
+.Title
+{
+  padding-bottom: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Open Sans';
+  font-size: 21px;
+}
+
+.Paragraph
+{
+  width: 46vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  float: right;
+  padding-right: 2vh;
+  padding-bottom: 2vh;
+  color: whitesmoke;
+  font-family: 'Open Sans';
+  font-size: 1vw;
+  text-align: right;
+}
+
+/*Normal Media Settings/////////////////////////////////////////////////////////////////////////////////////*/
+
+.MenuButton
+{
   display: none;
-  position: fixed;
-  bottom: 10vh;
-  left: 18vw;
-  z-index: 9;
 }
 
-/* Add styles to the form container */
-.form-container {
-  max-width: 25vw;
-  padding: 10px;
-  background-color: #000000dd;
+.Tag
+{
+  display: flex;
 }
 
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #ff0000;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
+#P2
+{
+  display: none;
+}
+#T2
+{
+  display: none;
+}
+#C2
+{
+  display: none;
+}
+#M1
+{
+  display: none;
+}
+#M2
+{
+  display: none;
 }
 
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+nav
+{
+  display: block;
+}
+
+/*Modified Media Settings///////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 1200px)
+{
+  .Textbox
+  {
+    height: 35vh;
+  }
+  .TagContainer
+  {
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+  }
+  .Tag
+  {
+    transition: ease all .5s;
+    width: 25vw;
+    height: 20vh;
+    background-color: #1e1e1eea;
+    position: absolute;
+    display: inline-block;
+    z-index: 3;
+    bottom: 2vh;
+    left: 2vh;
+  }
+  .TagHeader
+  {
+    display: inline-flex;
+    align-items: center;
+  }
+  .MenuButton
+  {
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    display: flex;
+    background-size: 7vh 7vh;
+    width: 7vh;
+    height: 7vh;
+    z-index: 4;
+  }
+  .Sidebar
+  {
+    background-color: #1e1e1eea;
+    top: 1vh;
+    left: 1vh;
+    width: 7vh;
+    height: 7vh;
+    transition: ease all .5s;
+  }
+  .SkillsSection
+  {
+    right: 2vh;
+  }
+  #P1
+  {
+    display: none;
+  }
+  #T1
+  {
+    display: none;
+  }
+  #C1 
+  {
+    display: none;
+  }
+  #P2
+  {
+    display: inline;
+    padding: 1vh;
+  }
+  #T2
+  {
+    display: inline;
+    padding-bottom: 0;
+  }
+  #C2 
+  {
+    display: block;
+    padding-top: 0;
+  }
+  #AM_Title
+  {
+    display: none;
+  }
+  #M1
+  {
+    background-image: url(/Images/Menu.png);
+  }
+  #M2
+  {
+    display: none;
+    background-image: url(/Images/X.png);
+  }
+  nav 
+  {
+    background-color: #1e1e1eea;
+    width: 17vw;
+    display: none;
+  }
 }

@@ -9,10 +9,30 @@
         <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
     </head>
     <body>
+        
+        <script type="text/javascript">
+
+            function on()
+            {
+                document.getElementById("M1").style.display = 'none';
+                document.getElementById("M2").style.display = 'flex';
+                document.getElementsByTagName('nav')[0].style.display = 'block';
+            }
+
+            function off()
+            {
+                document.getElementById("M1").style.display = 'flex';
+                document.getElementById("M2").style.display = 'none';
+                document.getElementsByTagName('nav')[0].style.display = 'none';
+            }
+
+        </script>
 
         <div class="Sidebar">
-            <img class="Profile" src="/Images/Optimized.jpg" border-radius="50%">
-            <p class='Title'>Joshua Williams<br>Software Engineer</p>
+            <button type="button" onclick="on()" id="M1" class="MenuButton"></button>
+            <button type="button" onclick="off()" id="M2" class="MenuButton"></button>
+            <img id="P1" class="Profile" src="/Images/Optimized.jpg" border-radius="50%">
+            <p id="T1" class='Title'>Joshua Williams<br>Software Engineer</p>
             <nav>
                 <ul>
                     <a href="about.html"><li><button class="Menu" id="A"><img class="Icon" src="Images/Person.png"/>About Me</button></li></a>
@@ -25,37 +45,28 @@
             </nav>
 
             
-            <div class='Contact'>
+            <div id="C1" class='Contact'>
                 <form class="ContactForm" action="https://github.com/jshw127"><button style="background-image: url(/Images/GitHub.png)" type="submit" class="ContactButton"/></form>
                 <form class="ContactForm" action="https://www.linkedin.com/in/jshw127"><button style="background-image: url(/Images/Linkedin.png)" type="submit" class="ContactButton"/></form>
-                <!--<button style="background-image: url(/Images/Email.png)" type="submit" onclick="openForm()" class="ContactButton"></button>-->
                 <form class="ContactForm" action="mailto:contact@joshuawilliams.info"><button style="background-image: url(/Images/Email.png)" type="submit" class="ContactButton"/></form>
             </div>
 
-            <!--
-            <div class="form-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
-                    <p class='Title'>Contact Information</p>
-                    <p class='ContactInfo'>Cell Phone #: (925)-519-4374</p>
-                    <p class='ContactInfo'>Email: contact@joshuawilliams.info</p>
-                    <button type="button" class="btn" onclick="closeForm()">Close</button>
-                </form>
-            </div>
-
-            <script>
-                    function openForm() 
-                    {
-                        document.getElementById("myForm").style.display = "block";
-                    }
-                    
-                    function closeForm() 
-                    {
-                        document.getElementById("myForm").style.display = "none";
-                    }
-            </script>
-            -->
-
         </div>
+
+        <div class="TagContainer">
+            <div class="Tag">
+                <div class="TagHeader">
+                    <img id="P2" class="Profile" src="/Images/Optimized.jpg" border-radius="50%">
+                    <p id="T2" class='Title'>Joshua Williams<br>Software Engineer</p>
+                </div>
+                <div id="C2" class='Contact'>
+                    <form class="ContactForm" action="https://github.com/jshw127"><button style="background-image: url(/Images/GitHub.png)" type="submit" class="ContactButton"/></form>
+                    <form class="ContactForm" action="https://www.linkedin.com/in/jshw127"><button style="background-image: url(/Images/Linkedin.png)" type="submit" class="ContactButton"/></form>
+                    <form class="ContactForm" action="mailto:contact@joshuawilliams.info"><button style="background-image: url(/Images/Email.png)" type="submit" class="ContactButton"/></form>
+                </div>
+            </div>
+        </div>
+
 
         <div>
             <div class="Content">
@@ -148,11 +159,11 @@
                     
                     <p class="Paragraph">
                         For this simulation, I created an environment on VirtualBox consisting of three hosts connected to the same
-                         local area network. In this configuration, one computer was configured as a DNS server running BIND9. With 
-                         this configuration complete, I then wrote a program to simulate the Kaminsky DNS attack. This attack consists 
-                         of an attacker computer flooding the DNS server with DNS requests that have forged DNS responses in the packet’s 
-                         options. If the transaction ID of the spoofed packet is correct, the DNS server caches the IP address in the 
-                         falsified response.
+                        local area network. In this configuration, one computer was configured as a DNS server running BIND9. With 
+                        this configuration complete, I then wrote a program to simulate the Kaminsky DNS attack. This attack consists 
+                        of an attacker computer flooding the DNS server with DNS requests that have forged DNS responses in the packet’s 
+                        options. If the transaction ID of the spoofed packet is correct, the DNS server caches the IP address in the 
+                        falsified response.
                     </p>
                 </div>
             </div>
@@ -182,8 +193,8 @@
             </div>
 
         <div>
-            <div class="Content">
-                <div class="SkillsSection">
+            <div id="XL_Content" class="Content">
+                <div id="Skills_Mod" class="SkillsSection">
                     
                     <div class="SkillSet">
                         <p class="SkillSetTitle">Tools & Technologies</p>
@@ -263,7 +274,7 @@
                     </div>
                 </div>
             </div>
-            <div class="XLBackground" id="Skills" style="background-image: url(Images/CB.jpg)"></div>
+            <div class="XL" id="Skills" style="background-image: url(Images/CB.jpg)"></div>
         </div>
 
         <div>
