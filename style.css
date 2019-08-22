@@ -468,6 +468,7 @@ nav
   }
   #M1
   {
+    display: block;
     background-image: url(/Images/Menu.png);
   }
   #M2
