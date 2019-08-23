@@ -27,12 +27,26 @@ a, a:hover, a:active, a:visited, a:focus {text-decoration: none;}
 .Background
 {
   background-size: cover;
-  filter: blur(3px);
   width: 100vw;
   height: 100vh;
   position: relative;
   top: 0;
   z-index: 1;
+}
+
+#About
+{
+  background-position: center;
+}
+
+#Projects
+{
+  filter: blur(4px);
+}
+
+#TitleBox
+{
+  top: 2vh;
 }
 
 .XL
@@ -53,7 +67,7 @@ a, a:hover, a:active, a:visited, a:focus {text-decoration: none;}
   transition: ease all .5s;
   width: 17vw;
   height: 100vh;
-  background-color: #1e1e1eea;
+  background-color: #000000;
   position: fixed;
   z-index: 3;
   top: 0;
@@ -417,9 +431,9 @@ nav
     text-decoration: none;
     background-color: transparent;
     display: flex;
-    background-size: 7vh 7vh;
-    width: 7vh;
-    height: 7vh;
+    background-size: 5vh 5vh;
+    width: 5vh;
+    height: 5vh;
     z-index: 4;
   }
   .Sidebar
@@ -427,8 +441,8 @@ nav
     background-color: #1e1e1eea;
     top: 1vh;
     left: 1vh;
-    width: 7vh;
-    height: 7vh;
+    width: 5vh;
+    height: 5vh;
     transition: ease all .5s;
   }
   .SkillsSection
